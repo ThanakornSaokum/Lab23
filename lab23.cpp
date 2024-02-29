@@ -64,7 +64,7 @@ double ComplexNumber::abs(){
 	return sqrt((pow(real,2) + pow(imag,2)));
 }
 double ComplexNumber::angle(){
-	return atan2(imag,real) * 180 / M_PI;
+	return atan2(imag,real) * 180 / 3.14159265358979323846;
 }
 ostream & operator << (ostream & os, const ComplexNumber &c) {
 	if(c.real != 0 && c.imag < 0) return os << c.real << c.imag << "i";
